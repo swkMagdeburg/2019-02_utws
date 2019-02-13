@@ -8,6 +8,6 @@ class ToasterTest {
 
     @Test
     void toast() {
-        assertNotNull(new Toaster());
+        assertNull(new Toaster());
     }
 }
