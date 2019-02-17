@@ -1,0 +1,202 @@
+!define eblue 1E6EB0
+!define elightgray cdcccc
+!define eultralightgray F2F2F2
+!define edarkgray 565657
+
+skinparam {
+  Handwritten false
+  Shadowing false
+  backgroundColor   white
+  arrowColor    eblue
+}
+
+skinparam Class {
+  HeaderBackgroundColor eblue
+  BackgroundColor eultralightgray
+  BorderColor edarkgray
+  FontColor white
+  StereotypeFontColor black
+  AttributeFontColor edarkgray
+}
+skinparam Object {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+}
+skinparam Usecase {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+}
+
+skinparam Package {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+}
+skinparam Activity {
+  ' Background of activities
+  BackgroundColor   eultralightgray
+  ' Color of activity borders
+  BorderColor   edarkgray
+  ' Background of diamond
+  DiamondBackgroundColor    eultralightgray
+  ' Color of diamond borders
+  DiamondBorderColor    edarkgray
+  ' Starting circle in activity diagrams
+  StartColor    eblue
+  ' Ending circle in activity diagrams
+  EndColor  eblue
+  ' Synchronization bar in activity diagrams
+  BarColor  eblue
+}
+skinparam Stereotype {
+  ' Background of abstract class spots in class diagrams
+  ABackgroundColor  A9DCDF
+  ' Background of class spots in class diagrams
+  CBackgroundColor  elightgray
+  ' Background of interface spots in class diagrams
+  IBackgroundColor  B4A7E5
+  ' Background of enum spots in class diagrams
+  EBackgroundColor  EB937F
+}
+skinparam Component {
+  InterfaceBackgroundColor eultralightgray
+  InterfaceBorderColor edarkgray
+  BackgroundColor eblue
+  BorderColor elightgray
+  FontColor white
+}
+skinparam state {
+  BackgroundColor   eultralightgray
+  FontColor black
+  BorderColor   edarkgray
+  StartColor    eblue
+  EndColor  eblue
+}
+skinparam sequence {
+  GroupBackgroundColor  eultralightgray
+  BoxLineColor  edarkgray
+  ArrowColor eblue
+  ArrowThickness 1.5
+  DividerBackgroundColor elightgray
+  'eblue
+    LifeLineBorderColor eblue
+  LifeLineBackgroundColor  eblue
+  ParticipantBorderColor eblue
+  ParticipantBackgroundColor eblue
+  ParticipantFontColor FFF
+  ReferenceHeaderBackgroundColor eblue
+  ' ReferenceBackgroundColor edarkgray
+  ReferenceBorderColor edarkgray
+  ReferenceBorderThickness 0.75
+  BoxBackgroundColor white
+  BoxBorderColor edarkgray
+   'eblue
+  BoxFontColor edarkgray
+}
+
+' Objekte: Datenbank, Wolke, Knoten, etc.
+skinparam Actor {
+  BackgroundColor   eblue
+  BorderColor   eblue
+}
+skinparam Agent {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Artifact {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Boundary {
+  BackgroundColor   eblue
+  BorderColor   edarkgray
+}
+skinparam Card {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Cloud {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Component {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Control {
+  BackgroundColor   eblue
+  BorderColor   edarkgray
+}
+skinparam Database {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Entity {
+  BackgroundColor   eblue
+  BorderColor   edarkgray
+}
+skinparam File {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Folder {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Frame {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Interface {
+  BackgroundColor   eblue
+  BorderColor   edarkgray
+}
+skinparam Node {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Note {
+  BackgroundColor  eblue
+  BorderColor  white
+  BorderThickness 1
+  FontColor white
+}
+skinparam Package {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Queue {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Stack {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Rectangle {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Storage {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
+skinparam Usecase {
+  BackgroundColor   eultralightgray
+  BorderColor   edarkgray
+  FontColor edarkgray
+}
