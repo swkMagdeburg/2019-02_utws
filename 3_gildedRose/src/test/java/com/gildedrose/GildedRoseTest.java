@@ -10,7 +10,7 @@ class GildedRoseTest
     @Test
     void updateQuality()
     {
-        Item standardItem = new Item("Elixir of the Mongoose", 5, 10);
+        Item standardItem = new Item("Salami", 5, 10);
         GildedRose app = new GildedRose(new Item[]{standardItem});
         app.updateQuality();
         assertEquals(standardItem.sellIn, 4);
