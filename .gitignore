@@ -1,3 +1,19 @@
+# Eclipse
+.project
+.classpath
+RemoteSystemsTempFiles
+.settings
+
+# IntelliJ
+out/
+*.iml
+.idea
+
+# gradle-Files
+.gradle/
+.gradletasknamecache
+build/
+
 # Compiled class file
 *.class
 
