@@ -5,7 +5,7 @@ module.exports = (markdown) => {
     let is_within_puml_block = false;
     return markdown
         .split('\n')
-        .map((line, index) = > {
+        .map((line, index) => {
             const is_current_puml_line_start = "```puml" == line;
             const is_current_puml_line_end = is_within_puml_block && "```" == line;
             if (!is_within_puml_block && !is_current_puml_line_start)
@@ -30,21 +30,21 @@ module.exports = (markdown) => {
 
             return "<!-- emptyline -->";
         })
-        .filter(value = > value != "<!-- emptyline -->")
+        .filter(value => value != "<!-- emptyline -->")
         .join('\n')
 }
 
 const readIncludeFile = filename => {
     return fs.readFileSync(filename, 'utf8')
         .split('\n')
-        .map((line, index) = > {
+        .map((line, index) => {
             if(line.trim().startsWith("'"))
                 return "<!-- emptyline -->";
             if (line.includes("'"))
                 return line.substr(0, line.indexOf("'"));
             return line
             })
-        .map((line, index) = > {line.replace("#", "")})
-        .filter(value = > value != "<!-- emptyline -->")
+        .map((line, index) => {line.replace("#", "")})
+        .filter(value => value != "<!-- emptyline -->")
         .join(';')
 }

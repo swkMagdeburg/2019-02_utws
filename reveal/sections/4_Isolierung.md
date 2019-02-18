@@ -145,7 +145,6 @@ assertEquals(toBeSpiedOn.getUniqueId(), ??);
 ```
 
 <!--v-->
-### Wie Tests für bestehenden Code entwickeln?
 <small>
 ```java
 public int makeDebtListKeyFigureColumn(String customerOid, Calendar bookKeepingDate)

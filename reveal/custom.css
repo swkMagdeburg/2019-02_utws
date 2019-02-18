@@ -2,7 +2,7 @@ html.dimBackground .slide-background { opacity: 0.4 !important; }
 
 /* make code sections larger */
 .reveal pre code {
-    max-height: 600px;
+    max-height: 525px;
 }
 
 /* images without borders */

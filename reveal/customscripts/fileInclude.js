@@ -3,10 +3,10 @@ var fs = require('fs');
 module.exports = (markdown) => {
   return markdown
     .split('\n')
-    .map((line, index) = > {
+    .map((line, index) => {
       if(/^{{.*}}$/.test(line))
-          return readIncludeFile(line)
-        return line
+        return readIncludeFile(line)
+      return line
     })
     .join('\n')
 }
