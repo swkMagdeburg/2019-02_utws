@@ -10,7 +10,6 @@
   * potenziert Testfälle
   * ist zum Teil unmöglich
 * Abhängigkeiten für den Test "simulieren": <!-- .element: class="fragment" data-fragment-index="2" -->
-  * aufbrechen der Abhängigkeit, denn die Abhängigkeit ist selbst getestet
   * isoliert das SUT
   * ermöglicht Konzentration auf die für das SUT notwendigen Testfälle
 
@@ -20,11 +19,11 @@
 * Mocks:
   * simuliert eine Instanz eines Objekts
   * Rückgabewerte für Methodenaufrufe können definiert werden
-  * Aufrufe von Methoden können verfiziert werden (in Anzahl und Parametern)
+  * Aufrufe von Methoden können verfiziert werden
 * Spy:
   * kapselt eine existierende Instanz eines Objekts
   * kann Methodenaufrufe "abfangen" und definierte Werte zurückliefern
-  * Aufrufe von Methoden können verfiziert werden (in Anzahl und Parametern)
+  * Aufrufe von Methoden können verfiziert werden
 
 <!--v-->
 ### Mockframeworks
@@ -39,11 +38,15 @@
   * nutzt inuitivere Flow-Syntax
   * trennt Mock-Verhalten und Verifikation
   * wird bevorzugt eingesetzt
+
+<!--v-->
+### Mockframeworks
+
 * PowerMockito
   * erlaubt mittels Reflections zusätzlich des Mocken von:
     * Konstruktoren
     * privater und statischer Methoden
-  * sollte nur eingesetzt werden, falls tatsächlich möglich, da nicht "Refactoring-Stabil"
+  * nur einsetzen, falls tatsächlich notwendig
 
 <!--v-->
 ### JMock

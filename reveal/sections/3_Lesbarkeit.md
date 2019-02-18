@@ -2,23 +2,33 @@
 ## Lesbarkeit von Tests
 
 <!--v-->
-### Tests sind auch Code
+### Dirty Tests
 
-* Wie Produktiv-Code, sollte auch Test-Code "clean" sein
-* eigentlich Test-Code wertvoller als Produktiv-Code
-  * angenommen, Produktiv-Code plötzlich weg: Firma geht pleite
-  * angenommen, Tests sind erhalten geblieben: Produktiv-Code kann gegen Tests entwickelt werden
-  * angenommen, Test-Code plötzlich weg: keine Aussage, welcher Produktiv-Code korrekt oder inkorrekt funktioniert
+* sind schwer wartbar
+* macht Produktiv-Code umso schwerer wartbar, denn Tests müssen zusammen mit diesem gepflegt werden
+* typisches Symptome:
+  * viele gleiche Tests mit nur subtilen Änderungen
+  * ein Refactoring verursacht viele fehlschlagende Tests
 
 <!--v-->
-### schlecht lesbare Tests
+### Test-Code ist wichtiger als Produktivcode
 
-* lassen urpsrüngliche Testfälle nur schwer erkennen
-* sind schwierig an neue Anforderungen anpassbar
-* geben wenig Vertrauen
-* werden eher `@Ignore` gesetzt als angepasst
+* Produtktivcode lässt sich aus Tests wieder herstellen
+* umgekehrt aber Testcode nicht aus dem Produktivcode
+* dokumentieren unser System
+* verifizieren Korrektheit des Codes
+* unterstützen das Design
+* geben Sicherheit für Refactoring und fachl. Änderungen
 
-QualityDataServiceImplUnitTest
+<!--v-->
+### Halte deine Tests sauber
+
+* folgl. für Tests gelten dieselben Code-Standards wie für Produktivcode:
+  * lesbar
+  * verständlich
+  * flexibel
+  * **keine** Duplikationen
+* QualityDataServiceImplUnitTest
 
 <!--v-->
 ### Nutze statische Imports
@@ -90,7 +100,7 @@ public ChildTest {
 ```java
 public ChildTest {
   @Test
-  public void givenAChildWhenGettingLollyThenItShouldBeHappy(){
+  public void givenAChildWhenGettingALollyThenItShouldBeHappy(){
     assertTrue(new Child().giveLolly().isHappy());
   }
 }
@@ -145,14 +155,11 @@ public void testFailEnsureNoSchema() throws Exception
 ### Fange keine Exceptions im Test
 
 ```java
+@Parameterized("getFailEnsureNoSchemaTestData")
 @Test(expected = IllegalSqlQueryExecutorException.class)
-public void testFailEnsureNoSchema() throws Exception
+public void testFailEnsureNoSchema(String query) throws Exception
 {
-  for (Object[] testData : getFailEnsureNoSchemaTestData())
-  {
-    String query = (String) testData[0];
-    SqlQueryPatternAuthorizer.ensureNoSchema(query, SCHEMAS);
-  }
+  SqlQueryPatternAuthorizer.ensureNoSchema(query, SCHEMAS);
 }
 ```
 
@@ -216,7 +223,7 @@ class Child {
   }
 
   @Test
-  void testChildGetsLolly(){
+  void testChildGetsLollyShouldBeHappy(){
     Child child = new Child();
     child.setGender(Gender.GIRL);
     child.giveLolly(lollydb.remove("Strawberry"));

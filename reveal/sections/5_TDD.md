@@ -13,7 +13,7 @@
 <!--v-->
 ### Vorgehensweise
 
-* Entwicklung von Test- und Produktivcode stets parallel
+*  parallele Entwicklung Test- und Produktivcode
 * in Mikroiterationen: Red-Green-Refactor
   * Red: Definiere einen Test für das neue Verhalten. Dieser Test muss zwangsweise fehlschlagen.
   * Green: Ändere den Produktivcode minimal, sodass der Test durchläuft.
@@ -49,4 +49,19 @@
   * Disziplin
 
 <!--v-->
-### 5. Übung
+### 5. Übung - String-Rechner
+
+<small>
+
+1. Ein leerer String liefert 0
+2. Eine einzelne Ziffer liefert den eigenen Wert
+3. Zwei Ziffern kommasepariert liefern die Summe
+4. Zwei Ziffern durch newline getrennt liefern die Summe
+5. Drei Ziffern, durch Komma oder newline getrennt, liefern die Summe
+6. Negative Ziffern werfen eine Exception
+7. Ziffern größer als 1000 werden ignoriert
+8. Auf der ersten Zeile kann ein einzelnes Zeichen als 'delimiter' in der Form '//#' für bspw. '#' angegeben werden
+9. Auf der ersten Zeile kann eine Zeichenfolge als delimter in eckigen Klammern angegeben werden ('//[###]' bspw. für '###')
+10. Auf der ersten Zeile können beliebig viele Zeichen bzw. Zeichenfolgen als delimiter angegeben werden (jedes in eckigen Klammern angegeben)
+
+</small>
