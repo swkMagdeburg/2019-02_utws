@@ -54,7 +54,6 @@
   * in der Regel keine externe Abhängigkeiten
 * sind dadurch stabiler gegenüber Änderungen als Integrations oder UI-Tests
 
-<!--v-->
 <!--### Integrationstest-->
 <!--SucheMoeglicheEmpfaengerTest-->
 
