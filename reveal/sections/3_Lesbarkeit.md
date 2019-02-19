@@ -42,8 +42,6 @@ public ChildTest {
 }
 ```
 
-![Wave in Eclipse einrichten]()<!-- .element: class="fragment" data-fragment-index="2" -->
-
 ```java
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -54,7 +52,7 @@ public ChildTest {
   }
 }
 ```
-<!-- .element: class="fragment" data-fragment-index="3" -->
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 <!--v-->
 ### Vertausche nicht expected und actual
@@ -223,7 +221,7 @@ class Child {
   }
 
   @Test
-  void testChildGetsLollyShouldBeHappy(){
+  void testChildGetsLollyShouldBeHappy (){
     Child child = new Child();
     child.setGender(Gender.GIRL);
     child.giveLolly(lollydb.remove("Strawberry"));

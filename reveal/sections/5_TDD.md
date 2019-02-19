@@ -27,7 +27,7 @@
 <!--v-->
 ### Zusatzaufwand
 
-* Hauptaufwand während Sw-Entwicklung liegt bei der Erarbeitung einzelner zu erfüllender Punkte bzw. Fälle (nicht im Tippen von Code)
+* Hauptaufwand während Sw-Entwicklung liegt bei der Erarbeitung einzelner zu erfüllender Punkte bzw. Fälle (nicht im Tippen vom Code)
 * an diesem Punkt, vor der Programmierung, ist der Aufwand zur Erstellung von UnitTests sehr gering
 * zusätzlich tendiert Code zur:
   * besseren gedanklichen Strukturierung

@@ -43,7 +43,7 @@
 ### Mockframeworks
 
 * PowerMockito
-  * erlaubt mittels Reflections zusätzlich des Mocken von:
+  * erlaubt zusätzlich des Mocken von:
     * Konstruktoren
     * privater und statischer Methoden
   * nur einsetzen, falls tatsächlich notwendig
@@ -120,7 +120,7 @@ public class YourTestCase {
 ```java
 MyClass test = mock(MyClass.class);
 when(test.getUniqueId()).thenReturn(43);
-assertEquals(test.getUniqueId(), 43);
+assertEquals(43, test.getUniqueId());
 ```
 
 ### Spy
@@ -128,7 +128,7 @@ assertEquals(test.getUniqueId(), 43);
 ```java
 MyClass test = spy(new MyClass());
 doReturn(43).when(test).getUniqueId();
-assertEquals(test.getUniqueId(), 43);
+assertEquals(43, test.getUniqueId());
 ```
 
 <!--v-->
@@ -136,15 +136,15 @@ assertEquals(test.getUniqueId(), 43);
 
 ```java
 MyClass test = mock(MyClass.class);
-assertEquals(test.getUniqueId(), ??); // Was kommt hier raus?
+assertEquals(??, test.getUniqueId()); // Was kommt hier raus?
 
 MyClass toBeSpiedOn = new MyClass();
 MyClass spying = spy(toBeSpiedOn);
 
-when(spying.getUniqueId()).thenReturn(43)
+when(spying.getUniqueId()).thenReturn(43);
 
 doReturn(43).when(spying).getUniqueId();
-assertEquals(toBeSpiedOn.getUniqueId(), ??);
+assertEquals(??, toBeSpiedOn.getUniqueId());
 ```
 
 <!--v-->
