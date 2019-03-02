@@ -4,7 +4,7 @@ Das Repository enthält alle Unterlagen des Unit-Test-Workshops vom Februar 2019
 
 ## Projekt-Struktur
 
-* [gh-pages](gh-pages) statisch generierte Ressourcen, um die Folien über github-Pages [hier](http://gaerfield.github.io/2019-02_utws/) betrachten zu können
+* [docs](docs) statisch generierte Ressourcen, um die Folien über github-Pages [hier](http://gaerfield.github.io/2019-02_utws/) betrachten zu können
 * [reveal](reveal): Die Vortragsfolien
   * [reveal-md](https://github.com/webpro/reveal-md) ist Vorrausetzung um die Folien generieren zu können
   * Anzeige der Folien mittels `reveal-md --preprocessor includes.js --highlight-theme solarized-light ut.md`
