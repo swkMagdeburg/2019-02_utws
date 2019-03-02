@@ -62,10 +62,10 @@
 
 * Ziel: Refactoring existierenden Codes
 * Experiment:
-  * Gruppe (1) nutzt existierende Tests: refactoren, Tests laufen lassen
-    * IntelliJ/Eclipse
-      * Strg-Shift-T/Strg-R: Zum Test springen
-      * Alt-Shift-F10/Alt-Shift-X + T: (Test ausführen)
-      * Strg-F5/Strg-F11: Test wiederholen
-      * Strg-Umschalt-Alt-T/Umschalt-Alt-T: Refactor
-  * Gruppe (2): refactoren ohne Tests
+  * Gruppe **A**: refactoren ohne Tests
+  * Gruppe **B** nutzt existierende Tests: refactoren, Tests laufen lassen
+  * IntelliJ/Eclipse
+    * Strg-Umschalt-Alt-T/Umschalt-Alt-T: Refactor
+    * Strg-Shift-T/Strg-R: Zum Test springen
+    * Alt-Shift-F10/Alt-Shift-X + T: (Test ausführen)
+    * Strg-F5/Strg-F11: Test wiederholen

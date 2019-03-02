@@ -151,13 +151,25 @@ public void testFailEnsureNoSchema() throws Exception
 
 <!--v-->
 ### Fange keine Exceptions im Test
-
+ JUnit4:
 ```java
 @Parameterized("getFailEnsureNoSchemaTestData")
 @Test(expected = IllegalSqlQueryExecutorException.class)
 public void testFailEnsureNoSchema(String query) throws Exception
 {
   SqlQueryPatternAuthorizer.ensureNoSchema(query, SCHEMAS);
+}
+```
+Junit5:
+```java
+@Parameterized("getFailEnsureNoSchemaTestData")
+public void testFailEnsureNoSchema(String query) throws Exception
+{
+  assertThrows (
+    IllegalSqlQueryExecutorException.class,
+    () -> SqlQueryPatternAuthorizer.ensureNoSchema(query, SCHEMAS),
+    "ExceptionMessage"
+  )
 }
 ```
 

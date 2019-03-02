@@ -68,8 +68,7 @@ class ArrayListTest {
     final boolean expected = true;
 
     // Rahmenbedingungen definieren und Test durchführen
-    final List<String> sut = new ArrayList<>(
-            Arrays.asList("Auto", "Brot", "Fuß"));
+    final List<String> sut = new ArrayList<>(in);
     final boolean containsBrot = sut.contains("Brot");
 
     // Spezifikation sicherstellen
