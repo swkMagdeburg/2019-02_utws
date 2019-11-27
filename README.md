@@ -1,6 +1,6 @@
 # 2019-02 Unit Test Workshop
 
-Das Repository enthält alle Unterlagen des Unit-Test-Workshops vom Februar 2019 der [Eudemonia Solutions AG](https://www.eudemonia-solutions.de/).
+Das Repository enthält alle Unterlagen für einen geplanten Unit-Test-Workshop.
 
 ## Projekt-Struktur
 
