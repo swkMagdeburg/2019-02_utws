@@ -39,8 +39,8 @@ Softwareentwicklung ist für ihn keine reine Produktion von Code sondern vielmeh
 
 # Tobias Blaschke
 
-Tobias Blaschke macht Softwareentwicklung Spaß. Die schnellebige IT-Welt mit ihren verschiedensten Facetten bieten ihm die Chance immer neue Technologien auszuprobieren und auch mal daran zu scheitern. Linux, Bash, Docker, Raspberry, Scrum, Jenkins, Zsh, Kodi, ZFS, Haskell, Gradle, tmux, Kotlin, fzf, squeezebox, k8s - die IT-Welt kann so wunderschön kompliziert sein.
+Tobias Blaschke macht Softwareentwicklung Spaß. Die schnellebige IT-Welt mit ihren verschiedensten Facetten bieten ihm die Chance immer neue Technologien auszuprobieren und auch mal daran zu verzweifeln. Linux, Bash, Docker, Raspberry, Scrum, Jenkins, Zsh, Kodi, ZFS, Haskell, Gradle, tmux, Kotlin, fzf, squeezebox, k8s - die IT-Welt kann so wunderschön kompliziert sein.
 
-Hauptberuflich unterstützt er in der [Eudemonia Solutions AG](https://www.eudemonia-solutions.de/) die Entwicklung von Software für die Finanzberatung als Entwickler und Architekt. Viele Jahre davon in einem über 10 Jahre hinweg gewachsenen Java-Projekt die sein Blick für komplexe Architekturen schärften und das Verständnis in der Entstehung von sogenanntem Legacy-Code steigerten.
+Hauptberuflich unterstützt er in der [Eudemonia Solutions AG](https://www.eudemonia-solutions.de/) die Entwicklung von Software für die Finanzberatung als Entwickler und Architekt, viele Jahre davon in einem über 10 Jahre hinweg gewachsenen Java-Projekt, welches seinen Blick für komplexe Architekturen schärfte und das Verständnis in der Entstehung von sogenanntem Legacy-Code steigerte.
 
-In unregelmäßigen Abständen trifft man ihn in auf Communityveranstaltungen wie der Softwerkskammer oder dem Developer Open Space, als Teilnehmer aber auch als Vortragenden.
+Man trifft ihn auf Communityveranstaltungen wie der Softwerkskammer oder dem Developer Open Space, als Teilnehmer oder als Vortragenden.
