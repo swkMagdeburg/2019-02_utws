@@ -4,7 +4,7 @@ Unittests sind mittlerweile Bestandteil des Werkzeugkastens eines jeden Software
 
 Wenn man auf der anderen Seite einmal in einem Projekt mit Unittests zu Gast ist, fühlt man sich in der Regel wohl. Die Unittests unterstützen beim Beheben von Bugs, beim Refaktorisieren von Modulen sowie beim Ergänzen bestehender Projekte um neue Funktionalitäten. Der Code ist meist aufgeräumt, wirkt klar strukturiert, jede Variable hat ihren wohl durchdachten Platz und alles ist irgendwie in sich konsistent.
 
-Versucht man diese positive Erfahrung in eigenen, oft über mehrere Jahre gewachsenen Projekten zu imitieren, so endet man nicht selten in Verzweiflung. Die vielen kleinen, idealtypischen Übungen der Pro-Test-Hippies der [Softwerkskammer[(https://www.softwerkskammer.org/groups/magdeburg)], scheinen einem nicht allzu selten im Stich zu lassen. Real sind dagegen:
+Versucht man diese positive Erfahrung in eigenen, oft über mehrere Jahre gewachsenen Projekten zu imitieren, so endet man nicht selten in Verzweiflung. Die vielen kleinen, idealtypischen Übungen der Pro-Test-Hippies der [Softwerkskammer](https://www.softwerkskammer.org/groups/magdeburg), scheinen einem nicht allzu selten im Stich zu lassen. Real sind dagegen:
 * hunderte Tests,
 * mühevolle und umfangreiche Initialisierungen der Testumgebung,
 * zu viele Überprüfungen pro Testfall
@@ -12,16 +12,16 @@ Versucht man diese positive Erfahrung in eigenen, oft über mehrere Jahre gewach
 * statische Abhängigkeiten die erst gar keinen UnitTest ermöglichen,
 * und **jede kleinste Änderung führt zu mindestens 20 fehlschlagenden Tests**.
 
-Dieser Workshop richtet sich an Unittest Anfänger und Fortgeschrittene gleichermaßen. Nach einem kurzen Einstieg werden wir die fortgeschrittene Strategien für die Erstellung von Unit-Tests betrachten. Alle Beispiele und Übungen werden wir gruppenweise in C# und Java durchführen.
+Dieser Workshop richtet sich an Unittest Anfänger und Fortgeschrittene gleichermaßen. Nach einem kurzen Einstieg werden wir die fortgeschrittene Strategien für die Erstellung von Unittests betrachten. Alle Beispiele und Übungen werden wir gruppenweise in C# und Java durchführen.
 
 Themen:
  * Einführung in Unittests
- * Vorteile testgestützter Software-Entwicklung
- * typische Anti-Pattern bei Unit-Tests
- * Best Practices für die Erstellung von Unit-Tests (Testnamen, Parametrisierung, usw.)
+ * Vorteile testgestützter Softwareentwicklung
+ * typische Anti-Pattern bei Unittests
+ * Best Practices für die Erstellung von Unittests (Testnamen, Parametrisierung, usw.)
  * Die Test-Pyramide
  * Isolierung externer Abhängigkeiten (bspw. Datenbanken)
- * Strategien für iterative Ergänzung von Unit-Tests in Legacy-Projekten
+ * Strategien für iterative Ergänzung von Unittests in Legacy-Projekten
  * Test Driven Development
 
 # Andreas Richter
