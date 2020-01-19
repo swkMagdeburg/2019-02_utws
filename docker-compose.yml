@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  reveal:
+    build:
+      context: ./docker/
+    image: reveal-md
+    stop_grace_period: 1s
+    volumes:
+      - ./reveal:/slides:ro
+    ports:
+      - 1948:1948
+        #command: --preprocessor includes.js --highlight-theme solarized-light ut.md
+
+
