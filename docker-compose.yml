@@ -10,6 +10,6 @@ services:
       - ./reveal:/slides:ro
     ports:
       - 1948:1948
-        #command: --preprocessor includes.js --highlight-theme solarized-light ut.md
+    command: --preprocessor includes.js --highlight-theme solarized-light ut.md
 
 

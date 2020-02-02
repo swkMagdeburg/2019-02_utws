@@ -99,7 +99,7 @@ class ArrayListTest {
 <!--v-->
 ### 1. Übung - schreiben einfacher Tests
 
-* [https://github.com/gaerfield/2019-02_utws.git](https://github.com/gaerfield/2019-02_utws.git)
+* [swkMagdeburg/UnitTestWorkshop](https://github.com/swkMagdeburg/UnitTestWorkshop)
 * 20min
   * Ziel: Projekt aufsetzen und mit UnitTests vertraut machen
   * gradle-Projekt in IDE importieren
