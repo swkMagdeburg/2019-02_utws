@@ -8,4 +8,4 @@ services:
       - ./reveal:/slides:ro
     ports:
       - 1948:1948
-    command: --preprocessor customscripts/includes.js --css theme/custom.css ut.md
+    command: --preprocessor customscripts/includes.js --css theme/custom.css 0_Slides.md

@@ -16,8 +16,8 @@ revealOptions:
 
 ![SWK-MD](img/swk-logo.png)  <!-- .element: width="30%" -->
 
-{{sections/1_UT_Intro.md}}
-{{sections/2_Refactoring.md}}
-{{sections/3_Lesbarkeit.md}}
-{{sections/4_Isolierung.md}}
-{{sections/5_TDD.md}}
+{{1_UT_Intro.md}}
+{{2_Refactoring.md}}
+{{3_Lesbarkeit.md}}
+{{4_Isolierung.md}}
+{{5_TDD.md}}
