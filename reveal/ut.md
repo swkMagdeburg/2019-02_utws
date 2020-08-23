@@ -1,10 +1,9 @@
 ---
-title: UnitTests
+title: Unit Testing
 separator: <!--s-->
 verticalSeparator: <!--v-->
-theme: solarized
-css: custom.css
-highlight-theme: solarized-light
+theme: "simple"
+highlightTheme: "monokai"
 revealOptions:
   controls: false
   slideNumber: false
@@ -12,7 +11,10 @@ revealOptions:
   backgroundTransition: 'fade'
 ---
 
-# Unit-Tests
+# Unit Testing 
+## von 0 auf TDD an einem Tag
+
+![SWK-MD](img/swk-logo.png)  <!-- .element: width="30%" -->
 
 {{sections/1_UT_Intro.md}}
 {{sections/2_Refactoring.md}}
