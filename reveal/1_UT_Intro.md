@@ -3,39 +3,42 @@
 
 <!--v-->
 ### Ein Auto auf dem Rollenprüfstand
-<ul>
-<li class="fragment" data-fragment-index="1">Tuner: die Leistung seines Fahrzeugs feststellen</li>
-<li class="fragment" data-fragment-index="2">TÜV: Feststellen der Farbe des Aufklebers für die Windschutzscheibe</li>
-<li class="fragment" data-fragment-index="3">Hersteller: sicherstellen das die vom Kraftfahrbundesamt/der EU vorgegebenen Spezifikationen eingehalten werden</li>
-</ul>
+* Tuner: die Leistung seines Fahrzeugs feststellen <!-- .element: class="fragment" -->
+* TÜV: Feststellen der Farbe des Aufklebers für die Windschutzscheibe <!-- .element: class="fragment" -->
+* Hersteller: sicherstellen das die vom Kraftfahrbundesamt/der EU vorgegebenen Spezifikationen eingehalten werden <!-- .element: class="fragment" -->
 
 <!--v-->
 ### Warum testen wir?
-<ol>
-<li class="fragment" data-fragment-index="1">Systematische Ermittlung der Fähigkeiten eines Testgegenstandes</li>
-<li class="fragment" data-fragment-index="2">Übereinstimmung des Testgegenstandes mit einer Spezifikation sicherstellen</li>
-</ol>
+* Systematische Ermittlung der Fähigkeiten eines Testgegenstandes <!-- .element: class="fragment" -->
+* Übereinstimmung des Testgegenstandes mit einer Spezifikation sicherstellen <!-- .element: class="fragment" -->
+
+<!--v-->
+### Unit Tests
+* Testgegenstand ist eine Methode, Klasse oder Komponente (Verbund von Klassen) <!-- .element: class="fragment" -->
+* definieren unterschiedliche Testfälle <!-- .element: class="fragment" -->
+  * können fachlich vorgegeben sein
+  * je Testfall Erwartungswert
+  * je Testfall Rahmenbedingungen (über korrekte Initialisierung)
+* stellen sicher, dass Erwartungswerte mit realen Werten übereinstimmen <!-- .element: class="fragment" -->
 
 <!--v-->
 ### Wie wird getestet?
 
 <div id="left">
 
-Definieren von:
-<ul>
-  <li>Rahmenbedingungen</li>
-  <li>Eingangswerte</li>
-  <li>erwartete Ausgangswerte</li>
-</ul>
+Definieren von: <!-- .element: class="fragment" data-fragment-index="1" -->
+* Rahmenbedingungen <!-- .element: class="fragment" data-fragment-index="1" -->
+* Eingangswerte <!-- .element: class="fragment" -->
+* erwartete Ausgangswerte <!-- .element: class="fragment" -->
 
 </div>
 
-<div id="right">
+<div id="right" class="fragment">
 
 ```puml
 left to right direction
 
-node "component\nto be tested" as sut
+node "System\nUnder\nTest" as sut
 card a
 card b
 card c
@@ -48,61 +51,68 @@ sut --> c
 </div>
 
 <!--v-->
-### Unit-Tests
-
-* Testgegenstand ist eine Methode, Klasse oder Komponente (Verbund von Klassen)
-* definieren unterschiedliche Testfälle
-  * können fachlich vorgegeben sein
-  * je Testfall Erwartungswert
-  * je Testfall Rahmenbedingungen (über korrekte Initialisierung)
-* stellen sicher, dass Erwartungswerte mit realen Werten übereinstimmen
-
-<!--v-->
-### Beispiel für UnitTest
+### Beispiele in Java
 ```java
-class ArrayListTest {
-  @Test
-  void testArrayListContains() {
-    // Eingangswerte und Erwartungswert definieren
-    List<String> in = Arrays.asList("Auto", "Brot", "Fuß")
-    final boolean expected = true;
+@Test
+public void EncryptShouldHandleEmptyString() {
+    // Arrange
+    var sut = new Rot13Security();
 
-    // Rahmenbedingungen definieren und Test durchführen
-    final List<String> sut = new ArrayList<>(in);
-    final boolean containsBrot = sut.contains("Brot");
+    // Act
+    var actual = sut.Encrypt("");
 
-    // Spezifikation sicherstellen
-    assertEquals(expected, containsBrot);
-  }
+    // Assert
+    assertEquals("", actual);
+}
+```
+
+```java
+@BeforeEach
+public void SetUp() {
+    _sut = new Rot13Security();
+}
+
+@Test
+public void EncryptShouldHandleNull() {
+    assertEquals("", _sut.Encrypt(null));
 }
 ```
 
 <!--v-->
-### Beispiel für UnitTest
-```java
-class ArrayListTest {
-  @Test
-  void testArrayListContains() {
-    final List<String> sut = new ArrayList<>(
-            Arrays.asList("Auto", "Brot", "Fuß"));
-    assertTrue(sut.contains("Brot"));
-  }
-  @Test
-  void testArrayListDoesNotContain() {
-    final List<String> sut = new ArrayList<>(
-            Arrays.asList("Auto", "Brot", "Fuß"));
-    assertFalse(sut.contains("Blumen"));
-  }
+### Beispiele in C#
+
+```csharp
+[Test]
+public void EncryptShouldHandleEmptyString()
+{
+    // Arrange
+    var sut = new Rot13Security();
+
+    // Act
+    var actual = sut.Encrypt(string.Empty);
+
+    // Assert
+    Assert.That(actual, Is.EqualTo(string.Empty));
+}
+```
+
+```csharp
+[Test]
+public void EncryptShouldHandleNull()
+{
+    Assert.That(_sut.Encrypt(null), Is.EqualTo(string.Empty));
 }
 ```
 
 <!--v-->
-### 1. Übung - schreiben einfacher Tests
+<!-- .slide: data-background="img/practice.svg" data-background-size="40%" -->
+
+### 1. Übung - mit Unit Tests vertraut machen
 
 * [swkMagdeburg/UnitTestWorkshop](https://github.com/swkMagdeburg/UnitTestWorkshop)
-* 20min
-  * Ziel: Projekt aufsetzen und mit UnitTests vertraut machen
-  * gradle-Projekt in IDE importieren
-* Projekt "1_Toaster"
-  * Klasse ArrayListTest suchen und ausführen
-  * Klasse ToasterTest suchen und Tests implementieren
+* Zeit: 20min
+* Ziele:
+  * Test Runner laufen lassen
+  * Struktur von Test- und Produktivcode
+  * Ändern von produktivem Code
+  * Erste eigene Testfälle schreiben 
