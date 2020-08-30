@@ -257,7 +257,7 @@ public void EncryptShouldShiftUpperCaseCharacter(string character, string expect
 <!-- .element: class="fragment" -->
 
 <!--v-->
-### 3. Übung - Unit Tests schreiben
+### Übung - Unit Tests schreiben
 <!-- .slide: data-background="img/practice.svg" data-background-size="40%" -->
 
 * Was: [Gilded Rose Refactoring Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata)

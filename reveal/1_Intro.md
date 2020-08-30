@@ -109,7 +109,7 @@ public void EncryptShouldNotShiftSpecialCharacters()
 <!--v-->
 <!-- .slide: data-background="img/practice.svg" data-background-size="40%" -->
 
-### 1. Übung - mit Unit Tests vertraut machen
+### Übung - mit Unit Tests vertraut machen
 
 * [swkMagdeburg/UnitTestWorkshop](https://github.com/swkMagdeburg/UnitTestWorkshop)
 * Was: Beispielimplementierung der [Function Kata ROT-13](https://ccd-school.de/coding-dojo/function-katas/rot-13/)

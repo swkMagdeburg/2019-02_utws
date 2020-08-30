@@ -11,7 +11,7 @@
 * Geben Sicherheit für Erweiterungen und Refactoring <!-- .element: class="fragment" -->
 
 <!--v-->
-### 2. Übung - Refactoring mit Unit Tests
+### Übung - Refactoring mit Unit Tests
 <!-- .slide: data-background="img/practice.svg" data-background-size="40%" -->
 
 * Was: [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)
