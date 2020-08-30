@@ -23,7 +23,7 @@ jobs:
           cd reveal
           npm install --no-optional reveal-md
           mkdir build
-          ./node_modules/.bin/reveal-md --preprocessor customscripts/includes.js --css theme/custom.css --assets-dir=assets --static build --absolute-url https://swkmagdeburg.github.io/UnitTestWorkshop/ 0_Slides.md
+          ./node_modules/.bin/reveal-md --preprocessor customscripts/includes.js --css theme/custom.css --assets-dir=assets --static-dirs=img --static build --absolute-url https://swkmagdeburg.github.io/UnitTestWorkshop/ 0_Slides.md
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
