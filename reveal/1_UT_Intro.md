@@ -110,9 +110,9 @@ public void EncryptShouldHandleNull()
 ### 1. Übung - mit Unit Tests vertraut machen
 
 * [swkMagdeburg/UnitTestWorkshop](https://github.com/swkMagdeburg/UnitTestWorkshop)
-* Zeit: 20min
+* Was: Beispielimplementierung der [Function Kata ROT-13](https://ccd-school.de/coding-dojo/function-katas/rot-13/)
 * Ziele:
   * Test Runner laufen lassen
-  * Struktur von Test- und Produktivcode
-  * Ändern von produktivem Code
+  * Struktur von Test- und Produktivcode erkunden
+  * Produktiven Code ändern und Tests beobachten
   * Erste eigene Testfälle schreiben 
