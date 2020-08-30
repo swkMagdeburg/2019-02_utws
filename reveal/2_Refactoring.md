@@ -1,71 +1,21 @@
 <!--s-->
-## Testpyramide
+## Wo helfen uns Unit Tests?
 
 <!--v-->
-### Warum testen wir?
+### Wo helfen uns Unit Tests?
 
-* Übereinstimmung des Testgegenstandes mit einer Spezifikation sicherstellen
-* ist ausgeliefert & wurde irgendwie getestet, warum dafür extra einen UnitTest entwickeln
-* häufige Modifikationen an Software  <!-- .element: class="fragment" data-fragment-index="2" -->
-  * durch Pflege, Anforderungsänderungen, Korrektur
-  * UnitTests ermöglichen Wiederholung der bereits validen Testfällen
-  * Sicherstellung, dass Änderungen keine neuen Fehler verursachen (Regressionen)
-
-<!--v-->
-<!-- .slide: data-background="https://media.giphy.com/media/vvLWidwZNYH5e/giphy.gif"-->
-
+* Dokumentieren die fachlichen Anforderungen <!-- .element: class="fragment" -->
+* Dokumentieren die Verwendung des produktiven Codes <!-- .element: class="fragment" -->
+* Unterstützen beim Entwerfen vom Design <!-- .element: class="fragment" -->
+* Verifizieren fortlaufend! die Korrektheit des Codes <!-- .element: class="fragment" -->
+* Geben Sicherheit für Erweiterungen und Refactoring <!-- .element: class="fragment" -->
 
 <!--v-->
-### UnitTests allein reichen nicht
+### 2. Übung - Refactoring mit Unit Tests
+<!-- .slide: data-background="img/practice.svg" data-background-size="40%" -->
 
-* UnitTest testet einzelne Einheit und kann nicht alle Fehler aufdecken
-* **Integrationstests**: testen Zusammenspiel zwischen verschiedenen Programmen oder Programmteilen
-* **Usability-Tests**: testet Gebrauchstauglichkeit einer Software
-* **Behavior Driven Development / Systemtest**: Entsprechung der Software gegenüber den funktionalen und nicht-funktionalen Anforderungen sicherstellen.
-
-<!--v-->
-### Testpyramide
-
-<div id="left">
-<ul>
-<li>Metapher für optimale Balance der Softwaretests</li>
-<li>UnitTests haben darin den größten Anteil</li>
-<li>Service-Layer beinhaltet: Api-, Integrations- und Komponententests</li>
-<li>UI sind automatisierte Klicktests</li>
-</ul>
-</div>
-
-<div id="right">
-
-  ![](https://martinfowler.com/bliki/images/testPyramid/test-pyramid.png)
-
-  [Martin Fowler - TestPyramid](https://martinfowler.com/bliki/TestPyramid.html)
-
-</div>
-
-<!--v-->
-### Testpyramide
-
-* UnitTests haben den größten Anteil, weil:
-  * geringer Entwicklungsaufwand
-  * einfach zu automatisieren
-  * schnell durchzuführen
-  * testen nur kleine Einheiten von Software (Fokus)
-  * in der Regel keine externe Abhängigkeiten
-* sind dadurch stabiler gegenüber Änderungen als Integrations oder UI-Tests
-
-<!--### Integrationstest-->
-<!--SucheMoeglicheEmpfaengerTest-->
-
-<!--v-->
-## 2. Übung - Tennis
-
-* Ziel: Refactoring existierenden Codes
-* Experiment:
-  * Gruppe **A**: refactoren ohne Tests
-  * Gruppe **B** nutzt existierende Tests: refactoren, Tests laufen lassen
-  * IntelliJ/Eclipse
-    * Strg-Umschalt-Alt-T/Umschalt-Alt-T: Refactor
-    * Strg-Shift-T/Strg-R: Zum Test springen
-    * Alt-Shift-F10/Alt-Shift-X + T: (Test ausführen)
-    * Strg-F5/Strg-F11: Test wiederholen
+* Was: [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)
+* Ziele:
+  * Implementierung verstehen
+  * Refactoring für bessere Lesbarkeit
+  * Tests müssen nicht angepasst / erweitert werden

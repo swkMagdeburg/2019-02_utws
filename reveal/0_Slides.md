@@ -21,3 +21,4 @@ revealOptions:
 {{3_Lesbarkeit.md}}
 {{4_Isolierung.md}}
 {{5_TDD.md}}
+{{6_Testpyramide.md}}
