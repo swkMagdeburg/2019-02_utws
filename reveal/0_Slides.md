@@ -16,9 +16,9 @@ revealOptions:
 
 ![SWK-MD](img/swk-logo.png)  <!-- .element: width="30%" -->
 
-{{1_UT_Intro.md}}
-{{2_Refactoring.md}}
-{{3_Lesbarkeit.md}}
-{{4_Isolierung.md}}
-{{5_TDD.md}}
-{{6_Testpyramide.md}}
+{{1_Intro.md}}
+{{2_Tests_nutzen.md}}
+{{3_Tests_schreiben.md}}
+{{4_TDD.md}}
+{{5_Testpyramide.md}}
+{{6_Isolierung.md}}
