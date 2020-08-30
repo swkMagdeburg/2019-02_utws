@@ -20,5 +20,5 @@ revealOptions:
 {{2_Tests_nutzen.md}}
 {{3_Tests_schreiben.md}}
 {{4_TDD.md}}
-{{5_Testpyramide.md}}
-{{6_Isolierung.md}}
+{{5_WasKommtDaNoch.md}}
+{{6_Outro.md}}

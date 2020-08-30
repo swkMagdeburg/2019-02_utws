@@ -51,6 +51,23 @@ sut --> c
 </div>
 
 <!--v-->
+### Was zeichnet einen guten Unit Test aus?
+
+* Schnelligkeit <!-- .element: class="fragment" -->
+  * Ausführung innerhalb von Millisekunden
+  * oftmals mehrere tausend Unit Tests in größeren Projekten
+* Unabhängigkeit <!-- .element: class="fragment" -->
+  * sind eigenständig und können isoliert ausgeführt werden
+  * keine Abhängigkeiten zu externen Quellen (Dateisystem, Datenbanken, ...)
+* Wiederholbarkeit <!-- .element: class="fragment" -->
+  * Jeder Lauf eines Unit Tests führt immer zum gleichen Ergebnis
+* Selbtsprüfung <!-- .element: class="fragment" -->
+  * Der Test prüft selbständig, ob er erfolgreich war oder nicht
+* Verhältnismäßigkeit <!-- .element: class="fragment" -->
+  * Aufwand zum Schreiben der Tests muss im Verhältnis zum produktiven Code stehen
+  * Aufwändig zu schreibende Tests weisen oft auf ungeeigneten Entwurf im Code hin
+  
+<!--v-->
 ### Beispiele in Java
 ```java
 @Test

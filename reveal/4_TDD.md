@@ -21,7 +21,7 @@
 </div>
  <!-- .element: class="fragment" -->
 
-<div id="right" class="fragment">
+<div id="right">
 
 * Red: Testfall für neue Funktionalität <!-- .element: class="fragment" -->
   * Test muss fehl schlagen
