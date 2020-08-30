@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class EncryptTests {
     private Rot13Security _sut;
@@ -26,8 +26,8 @@ public class EncryptTests {
     }
 
     @Test
-    public void EncryptShouldHandleNull() {
-        assertEquals("", _sut.Encrypt(null));
+    public void EncryptShouldThrowExceptionWhenNull() {
+        assertThrows(NullPointerException.class, () -> _sut.Encrypt(null));
     }
 
     @ParameterizedTest
@@ -59,7 +59,7 @@ public class EncryptTests {
             "Z, M"
     })
     public void EncryptShouldShiftToStartOfAlphabetWhenItsEndIsReached(String character, String expected) {
-        assertEquals(expected, _sut.Encrypt(character));
+        assertEquals(_sut.Encrypt(character), expected);
     }
 
     @ParameterizedTest

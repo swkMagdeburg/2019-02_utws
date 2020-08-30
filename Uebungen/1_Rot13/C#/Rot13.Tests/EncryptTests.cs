@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace Rot13.Tests
@@ -27,9 +28,9 @@ namespace Rot13.Tests
         }
 
         [Test]
-        public void EncryptShouldHandleNull()
+        public void EncryptShouldThrowExceptionWhenNull()
         {
-            Assert.That(_sut.Encrypt(null), Is.EqualTo(string.Empty));
+            Assert.Throws<ArgumentNullException>(() => _sut.Encrypt(null));
         }
 
         [TestCase("A", "N")]

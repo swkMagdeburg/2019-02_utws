@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Text;
 
@@ -7,6 +8,9 @@ namespace Rot13
     {
         public string Encrypt(string input)
         {
+            if (input == null)
+                throw new ArgumentNullException();
+
             if (string.IsNullOrEmpty(input)) 
                 return string.Empty;
 

@@ -1,8 +1,10 @@
 public class Rot13Security {
     public String Encrypt(String input) {
-        if ((input == null) || (input.equals(""))) {
+        if (input == null)
+            throw new NullPointerException();
+
+        if (input.equals(""))
             return "";
-        }
 
         input = input
                 .replaceAll("ä", "AE")

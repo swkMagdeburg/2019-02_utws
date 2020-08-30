@@ -73,8 +73,9 @@ public void SetUp() {
 }
 
 @Test
-public void EncryptShouldHandleNull() {
-    assertEquals("", _sut.Encrypt(null));
+public void EncryptShouldNotShiftSpecialCharacters() {
+    var specialCharacters = "01234567890, !§$%&/()=[]{}";
+    assertEquals(specialCharacters, _sut.Encrypt(specialCharacters));
 }
 ```
 
@@ -98,9 +99,10 @@ public void EncryptShouldHandleEmptyString()
 
 ```csharp
 [Test]
-public void EncryptShouldHandleNull()
+public void EncryptShouldNotShiftSpecialCharacters()
 {
-    Assert.That(_sut.Encrypt(null), Is.EqualTo(string.Empty));
+    var specialCharacters = "01234567890, !§$%&/()=[]{}";
+    Assert.That(_sut.Encrypt(specialCharacters), Is.EqualTo(specialCharacters));
 }
 ```
 

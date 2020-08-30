@@ -1,3 +1,6 @@
 [submodule "Uebungen/2_Tennis-Refactoring-Kata"]
 	path = Uebungen/2_Tennis-Refactoring-Kata
 	url = https://github.com/emilybache/Tennis-Refactoring-Kata
+[submodule "Uebungen/3_GildedRose-Refactoring-Kata"]
+	path = Uebungen/3_GildedRose-Refactoring-Kata
+	url = https://github.com/emilybache/GildedRose-Refactoring-Kata.git
