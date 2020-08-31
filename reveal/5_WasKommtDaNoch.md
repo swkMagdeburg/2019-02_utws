@@ -20,7 +20,7 @@
 
 <div id="left">
 
-* *Metapher für optimale Balance der Softwaretests
+* Metapher für optimale Balance der Softwaretests
 * Unit Tests haben darin den größten Anteil
 * Service Tests beinhalten Api-, Integrations- und Systemtests
 * UI Tests sind automatisierte Klicktests
@@ -56,9 +56,9 @@ Dependency Injection <!-- .element: class="fragment" -->
 
 <div id="right">
 
-* Abhängigkeiten injezieren <!-- .element: class="fragment" -->
+* Abhängigkeiten extrahieren & injezieren <!-- .element: class="fragment" -->
 * Produktivlauf nutzt Produktivcode der Abhängigkeit <!-- .element: class="fragment" -->
-* Teslauf nutzt Ersatz für Produktivcode der Abhängigkeit <!-- .element: class="fragment" -->
+* Testlauf nutzt Ersatz für Produktivcode der Abhängigkeit <!-- .element: class="fragment" -->
 
 </div>
 
@@ -80,10 +80,11 @@ Dependency Injection <!-- .element: class="fragment" -->
 
 ### Regelmäßiges Üben <!-- .element: class="fragment" -->
 
-* &nbsp;<!-- .element: class="fragment" --> Coding Dojos
-* &nbsp;<!-- .element: class="fragment" --> Coding Katas
+* &nbsp;<!-- .element: class="fragment" --> Coding Dojos / Coding Katas
   * [CCD School](https://ccd-school.de/coding-dojo/#cd2)
   * [Kata Log](https://kata-log.rocks/)
   * [Coding Dojo](https://codingdojo.org/)
+  * Constraints (4 Rules of Simple Design, Ping Pong, 2 Minutes to Green)
+* &nbsp; <!-- .element: class="fragment" --> Holt euch Feedback!
 * &nbsp; <!-- .element: class="fragment" --> [Code Retreats](https://www.coderetreat.org/)
 * &nbsp; <!-- .element: class="fragment" --> Coding Dojos in der [SWK Magdeburg](https://www.meetup.com/de-DE/Softwerkskammer-Magdeburg/)
